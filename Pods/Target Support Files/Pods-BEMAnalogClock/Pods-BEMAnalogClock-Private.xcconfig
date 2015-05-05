@@ -1,0 +1,5 @@
+#include "Pods-BEMAnalogClock.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/BEMAnalogClock" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BEMAnalogClock" "${PODS_ROOT}/Headers/Public/DDHTimerControl" "${PODS_ROOT}/Headers/Public/FXForms" "${PODS_ROOT}/Headers/Public/JTCalendar" "${PODS_ROOT}/Headers/Public/KVNProgress" "${PODS_ROOT}/Headers/Public/SIAlertView" "${PODS_ROOT}/Headers/Public/UITableView-NXEmptyView"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}

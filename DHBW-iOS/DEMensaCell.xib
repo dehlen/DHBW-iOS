@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="Voi-Ju-3Vd" customClass="DEMensaCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Voi-Ju-3Vd" id="T7s-Ty-K7l">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmE-66-NoU">
+                        <rect key="frame" x="8" y="23" width="71" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="3ag-Z9-vxm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="condiments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao3-Et-hmd">
+                        <rect key="frame" x="8" y="39" width="71" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.70 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3o-7H-iIU">
+                        <rect key="frame" x="87" y="0.0" width="210" height="82"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ao3-Et-hmd" firstAttribute="top" secondItem="T7s-Ty-K7l" secondAttribute="topMargin" constant="31" id="3oc-4a-dav"/>
+                    <constraint firstItem="a3o-7H-iIU" firstAttribute="leading" secondItem="BmE-66-NoU" secondAttribute="trailing" constant="8" symbolic="YES" id="53D-m4-mxK"/>
+                    <constraint firstItem="BmE-66-NoU" firstAttribute="leading" secondItem="T7s-Ty-K7l" secondAttribute="leadingMargin" id="IjG-wO-zIK"/>
+                    <constraint firstItem="a3o-7H-iIU" firstAttribute="trailing" secondItem="T7s-Ty-K7l" secondAttribute="trailingMargin" constant="-15" id="Iwl-Fh-zV7"/>
+                    <constraint firstItem="a3o-7H-iIU" firstAttribute="top" secondItem="T7s-Ty-K7l" secondAttribute="top" id="TiV-5j-KVA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="a3o-7H-iIU" secondAttribute="bottom" constant="-9" id="U9p-xC-img"/>
+                    <constraint firstItem="ao3-Et-hmd" firstAttribute="leading" secondItem="BmE-66-NoU" secondAttribute="leading" id="iQu-3f-sqH"/>
+                    <constraint firstItem="BmE-66-NoU" firstAttribute="top" secondItem="T7s-Ty-K7l" secondAttribute="topMargin" constant="15" id="qJg-Kv-yos"/>
+                    <constraint firstItem="a3o-7H-iIU" firstAttribute="leading" secondItem="ao3-Et-hmd" secondAttribute="trailing" constant="8" symbolic="YES" id="sY7-gu-a6l"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ao3-Et-hmd" secondAttribute="bottom" constant="11" id="waf-NR-aUp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="condimentsLabel" destination="ao3-Et-hmd" id="dx1-SQ-UuI"/>
+                <outlet property="foodLabel" destination="BmE-66-NoU" id="Ewa-46-CnP"/>
+                <outlet property="priceLabel" destination="a3o-7H-iIU" id="vVE-Lq-tWn"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="430"/>
+        </tableViewCell>
+    </objects>
+</document>

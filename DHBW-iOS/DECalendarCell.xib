@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DECalendarCell" rowHeight="76" id="fZQ-N1-VPW" customClass="DECalendarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZQ-N1-VPW" id="Iq0-Q4-Tsl">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypu-0N-OQd">
+                        <rect key="frame" x="86" y="10" width="226" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="GTH-g9-kEr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGr-Pa-OiT">
+                        <rect key="frame" x="77" y="0.0" width="1" height="82"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="7jR-Mi-807"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRr-Ig-lpi">
+                        <rect key="frame" x="86" y="54" width="226" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.68738594890000004" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:37-23:59" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-S5-QYL">
+                        <rect key="frame" x="8" y="8" width="61" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.68738594890000004" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-Y6-RHe" customClass="BEMAnalogClockView">
+                        <rect key="frame" x="15" y="27" width="46" height="46"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="JHO-jp-Gi7"/>
+                            <constraint firstAttribute="height" constant="46" id="Wko-hx-Jfn"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="fZQ-N1-VPW" id="KpH-1a-kxw"/>
+                        </connections>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="iOu-0U-DEM">
+                        <rect key="frame" x="86" y="34" width="226" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.68738594890000004" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZGr-Pa-OiT" secondAttribute="bottom" constant="-9" id="2Wb-IY-s9r"/>
+                    <constraint firstItem="bRr-Ig-lpi" firstAttribute="leading" secondItem="iOu-0U-DEM" secondAttribute="leading" id="3xl-cG-bsf"/>
+                    <constraint firstItem="bRr-Ig-lpi" firstAttribute="leading" secondItem="ZGr-Pa-OiT" secondAttribute="trailing" constant="8" symbolic="YES" id="5eA-YV-Yzt"/>
+                    <constraint firstItem="T4o-Y6-RHe" firstAttribute="leading" secondItem="Iq0-Q4-Tsl" secondAttribute="leadingMargin" constant="7" id="7ky-d5-c1j"/>
+                    <constraint firstItem="T4o-Y6-RHe" firstAttribute="bottom" secondItem="Iq0-Q4-Tsl" secondAttribute="bottomMargin" id="8Fo-tG-cX2"/>
+                    <constraint firstItem="6GL-S5-QYL" firstAttribute="top" secondItem="Iq0-Q4-Tsl" secondAttribute="topMargin" id="Cil-nD-BOr"/>
+                    <constraint firstItem="iOu-0U-DEM" firstAttribute="leading" secondItem="Ypu-0N-OQd" secondAttribute="leading" id="FEg-u4-dg4"/>
+                    <constraint firstItem="ZGr-Pa-OiT" firstAttribute="leading" secondItem="T4o-Y6-RHe" secondAttribute="trailing" constant="16" id="Fyg-Mb-eOt"/>
+                    <constraint firstItem="bRr-Ig-lpi" firstAttribute="trailing" secondItem="Ypu-0N-OQd" secondAttribute="trailing" id="Gqd-S5-Lqq"/>
+                    <constraint firstItem="T4o-Y6-RHe" firstAttribute="top" secondItem="Iq0-Q4-Tsl" secondAttribute="topMargin" constant="19" id="HE3-eH-LO2"/>
+                    <constraint firstItem="ZGr-Pa-OiT" firstAttribute="leading" secondItem="6GL-S5-QYL" secondAttribute="trailing" constant="8" symbolic="YES" id="J1z-UE-t2d"/>
+                    <constraint firstItem="T4o-Y6-RHe" firstAttribute="bottom" secondItem="Iq0-Q4-Tsl" secondAttribute="bottomMargin" id="Nf0-ET-eLX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bRr-Ig-lpi" secondAttribute="bottom" constant="-2" id="QAp-pq-kWe"/>
+                    <constraint firstItem="ZGr-Pa-OiT" firstAttribute="top" secondItem="Iq0-Q4-Tsl" secondAttribute="top" id="QLJ-yD-cnP"/>
+                    <constraint firstAttribute="trailing" secondItem="ZGr-Pa-OiT" secondAttribute="trailing" constant="242" id="SSE-IY-T0l"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6GL-S5-QYL" secondAttribute="bottom" constant="44" id="V93-cc-TE0"/>
+                    <constraint firstItem="6GL-S5-QYL" firstAttribute="leading" secondItem="Iq0-Q4-Tsl" secondAttribute="leadingMargin" id="ZT3-3D-f2u"/>
+                    <constraint firstItem="Ypu-0N-OQd" firstAttribute="top" secondItem="Iq0-Q4-Tsl" secondAttribute="topMargin" constant="2" id="Zwq-fi-Veu"/>
+                    <constraint firstItem="bRr-Ig-lpi" firstAttribute="top" secondItem="Ypu-0N-OQd" secondAttribute="bottom" constant="18" id="d9c-3J-9LX"/>
+                    <constraint firstItem="Ypu-0N-OQd" firstAttribute="trailing" secondItem="Iq0-Q4-Tsl" secondAttribute="trailingMargin" id="eaF-4r-1sP"/>
+                    <constraint firstItem="T4o-Y6-RHe" firstAttribute="top" secondItem="6GL-S5-QYL" secondAttribute="bottom" constant="-2" id="giQ-tT-V7i"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iOu-0U-DEM" secondAttribute="bottom" constant="17" id="hX9-mp-1jw"/>
+                    <constraint firstItem="6GL-S5-QYL" firstAttribute="centerX" secondItem="T4o-Y6-RHe" secondAttribute="centerX" id="jfx-XU-h6q"/>
+                    <constraint firstItem="iOu-0U-DEM" firstAttribute="top" secondItem="Iq0-Q4-Tsl" secondAttribute="topMargin" constant="26" id="rKZ-j7-QRO"/>
+                    <constraint firstItem="bRr-Ig-lpi" firstAttribute="trailing" secondItem="iOu-0U-DEM" secondAttribute="trailing" id="rR1-jr-zTL"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7ky-d5-c1j"/>
+                        <exclude reference="8Fo-tG-cX2"/>
+                        <exclude reference="HE3-eH-LO2"/>
+                        <exclude reference="Fyg-Mb-eOt"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="roomLabel" destination="iOu-0U-DEM" id="ZwG-vy-vYL"/>
+                <outlet property="subjectLabel" destination="Ypu-0N-OQd" id="gBn-s1-k7z"/>
+                <outlet property="timeLabel" destination="6GL-S5-QYL" id="S9m-zH-Mv5"/>
+                <outlet property="timeView" destination="T4o-Y6-RHe" id="7dc-Rp-lld"/>
+                <outlet property="tutorLabel" destination="bRr-Ig-lpi" id="nOv-5a-lBV"/>
+            </connections>
+            <point key="canvasLocation" x="339" y="415"/>
+        </tableViewCell>
+    </objects>
+</document>

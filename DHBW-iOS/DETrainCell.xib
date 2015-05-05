@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DETrainCell" rowHeight="76" id="ikJ-4g-LhV" customClass="DETrainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ikJ-4g-LhV" id="gJS-kZ-N4B">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-wQ-YFP">
+                        <rect key="frame" x="23" y="24" width="151" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="151" id="JUk-6Z-YLm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-ZG-eSv">
+                        <rect key="frame" x="0.0" y="0.0" width="15" height="82"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:40" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0V-nb-mHz">
+                        <rect key="frame" x="182" y="0.0" width="130" height="82"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linie 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ov-0Z-7yN">
+                        <rect key="frame" x="23" y="40" width="151" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G0V-nb-mHz" firstAttribute="top" secondItem="gJS-kZ-N4B" secondAttribute="top" id="5iq-QT-Ld2"/>
+                    <constraint firstItem="5ov-0Z-7yN" firstAttribute="leading" secondItem="JYM-ZG-eSv" secondAttribute="trailing" constant="8" symbolic="YES" id="65Y-rQ-WOy"/>
+                    <constraint firstItem="JYM-ZG-eSv" firstAttribute="top" secondItem="G0V-nb-mHz" secondAttribute="top" id="ERi-nf-Ljx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5ov-0Z-7yN" secondAttribute="bottom" constant="10" id="M2u-l6-nNB"/>
+                    <constraint firstItem="5ov-0Z-7yN" firstAttribute="top" secondItem="gJS-kZ-N4B" secondAttribute="topMargin" constant="32" id="Qi5-Ry-TqZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="G0V-nb-mHz" secondAttribute="bottom" constant="-9" id="R7s-YE-383"/>
+                    <constraint firstItem="6Vm-wQ-YFP" firstAttribute="leading" secondItem="JYM-ZG-eSv" secondAttribute="trailing" constant="8" symbolic="YES" id="ajw-lg-eTp"/>
+                    <constraint firstItem="G0V-nb-mHz" firstAttribute="leading" secondItem="6Vm-wQ-YFP" secondAttribute="trailing" constant="8" symbolic="YES" id="jrJ-Lq-4sS"/>
+                    <constraint firstItem="G0V-nb-mHz" firstAttribute="leading" secondItem="5ov-0Z-7yN" secondAttribute="trailing" constant="8" symbolic="YES" id="m4Z-Me-vCB"/>
+                    <constraint firstItem="G0V-nb-mHz" firstAttribute="trailing" secondItem="gJS-kZ-N4B" secondAttribute="trailingMargin" id="mla-fV-Pox"/>
+                    <constraint firstItem="6Vm-wQ-YFP" firstAttribute="top" secondItem="gJS-kZ-N4B" secondAttribute="topMargin" constant="16" id="nfx-0g-zYX"/>
+                    <constraint firstItem="6Vm-wQ-YFP" firstAttribute="leading" secondItem="gJS-kZ-N4B" secondAttribute="leading" constant="23" id="rMN-O9-gyY"/>
+                    <constraint firstItem="JYM-ZG-eSv" firstAttribute="leading" secondItem="gJS-kZ-N4B" secondAttribute="leading" id="sek-XZ-ocd"/>
+                    <constraint firstItem="JYM-ZG-eSv" firstAttribute="bottom" secondItem="G0V-nb-mHz" secondAttribute="bottom" id="xJr-ts-IQ9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colorView" destination="JYM-ZG-eSv" id="1Ko-g5-uho"/>
+                <outlet property="destinationLabel" destination="6Vm-wQ-YFP" id="ntT-YQ-4MF"/>
+                <outlet property="lineLabel" destination="5ov-0Z-7yN" id="GTR-a3-1dd"/>
+                <outlet property="timeLabel" destination="G0V-nb-mHz" id="pSB-1L-PLC"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="341"/>
+        </tableViewCell>
+    </objects>
+</document>

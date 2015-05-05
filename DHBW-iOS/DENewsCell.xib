@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DENewsCell" rowHeight="115" id="KPv-4Y-dLo" customClass="DENewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KPv-4Y-dLo" id="1Zy-Cs-a2c">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akademische Jahresfeier 2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohu-6P-fO8">
+                        <rect key="frame" x="8" y="9" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dJj-E7-LNT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 Jahre Berufsakademie / Duale Hochschule Baden-Württemberg Karlsruhe, Blick zurück und in die..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHi-ik-jFf">
+                        <rect key="frame" x="8" y="58" width="304" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri, 05 Dec 2014 06:02:00 +0100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0f-Kb-pEw">
+                        <rect key="frame" x="8" y="29" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.47536496350000002" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZHi-ik-jFf" firstAttribute="top" secondItem="ohu-6P-fO8" secondAttribute="bottom" constant="28" id="2Hh-XA-ALf"/>
+                    <constraint firstItem="ohu-6P-fO8" firstAttribute="trailing" secondItem="g0f-Kb-pEw" secondAttribute="trailing" id="4KU-O0-90q"/>
+                    <constraint firstItem="ohu-6P-fO8" firstAttribute="top" secondItem="1Zy-Cs-a2c" secondAttribute="topMargin" constant="1" id="7vD-CD-QDY"/>
+                    <constraint firstItem="ZHi-ik-jFf" firstAttribute="leading" secondItem="g0f-Kb-pEw" secondAttribute="leading" id="Kbm-ER-yH8"/>
+                    <constraint firstItem="ZHi-ik-jFf" firstAttribute="bottom" secondItem="1Zy-Cs-a2c" secondAttribute="bottomMargin" id="PCa-Jt-c81"/>
+                    <constraint firstItem="g0f-Kb-pEw" firstAttribute="leading" secondItem="ohu-6P-fO8" secondAttribute="leading" id="UZF-YY-foP"/>
+                    <constraint firstItem="ZHi-ik-jFf" firstAttribute="trailing" secondItem="g0f-Kb-pEw" secondAttribute="trailing" id="ZnI-9f-1UR"/>
+                    <constraint firstItem="ZHi-ik-jFf" firstAttribute="leading" secondItem="1Zy-Cs-a2c" secondAttribute="leadingMargin" id="cbQ-sU-Rkj"/>
+                    <constraint firstItem="ohu-6P-fO8" firstAttribute="trailing" secondItem="1Zy-Cs-a2c" secondAttribute="trailingMargin" id="gqJ-EB-T4B"/>
+                    <constraint firstItem="g0f-Kb-pEw" firstAttribute="top" secondItem="1Zy-Cs-a2c" secondAttribute="topMargin" constant="21" id="h7Y-FG-c34"/>
+                    <constraint firstItem="ZHi-ik-jFf" firstAttribute="top" secondItem="g0f-Kb-pEw" secondAttribute="bottom" constant="8" symbolic="YES" id="iSR-zf-vFk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="publishedLabel" destination="g0f-Kb-pEw" id="aB1-rn-Oal"/>
+                <outlet property="sneakLabel" destination="ZHi-ik-jFf" id="DhN-G6-DSt"/>
+                <outlet property="titleLabel" destination="ohu-6P-fO8" id="Am6-hT-9PS"/>
+            </connections>
+            <point key="canvasLocation" x="309" y="403.5"/>
+        </tableViewCell>
+    </objects>
+</document>
