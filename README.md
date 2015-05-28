@@ -1,8 +1,10 @@
 # DHBW iOS Client
+This version is experimental and its possible that bugs will occur. Please report them with the help of the issue tracker and feel free to contribute to fix them :)
 
 ###Run
 
-DHBW-iOS uses Cocoapods in order to create a dependency management for third-party libraries. To run the application from your Xcode Installation make sure to install cocoapods first via:
+DHBW-iOS uses Cocoapods in order to create a dependency management for third-party libraries. 
+To run the application from your Xcode Installation make sure to install cocoapods first via:
 ```sh
 $  sudo gem install cocoapods
 ```
